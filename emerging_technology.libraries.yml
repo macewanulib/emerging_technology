@@ -1,0 +1,10 @@
+et_form:
+  css:
+    theme:
+      css/et_form.css: {}
+  js:
+    js/et_form.js: {}
+  dependencies:
+    - core/drupal.ajax
+    - core/drupal.dialog.ajax
+    - core/jquery

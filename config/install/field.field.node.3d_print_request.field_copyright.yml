@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright
+    - node.type.3d_print_request
+id: node.3d_print_request.field_copyright
+field_name: field_copyright
+entity_type: node
+bundle: 3d_print_request
+label: Copyright
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

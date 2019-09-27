@@ -1,0 +1,229 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.3d_print_request.field_3d_model_file
+    - field.field.node.3d_print_request.field_colour
+    - field.field.node.3d_print_request.field_copyright
+    - field.field.node.3d_print_request.field_course
+    - field.field.node.3d_print_request.field_date_completed
+    - field.field.node.3d_print_request.field_date_submitted
+    - field.field.node.3d_print_request.field_due
+    - field.field.node.3d_print_request.field_email
+    - field.field.node.3d_print_request.field_first_name
+    - field.field.node.3d_print_request.field_gcode_file
+    - field.field.node.3d_print_request.field_last_name
+    - field.field.node.3d_print_request.field_notes
+    - field.field.node.3d_print_request.field_number_of_copies
+    - field.field.node.3d_print_request.field_permission
+    - field.field.node.3d_print_request.field_person_id
+    - field.field.node.3d_print_request.field_print_status
+    - field.field.node.3d_print_request.field_printer
+    - field.field.node.3d_print_request.field_printing_time
+    - field.field.node.3d_print_request.field_program_faculty_school_dep
+    - field.field.node.3d_print_request.field_reuse
+    - field.field.node.3d_print_request.field_secondary_colour_material
+    - field.field.node.3d_print_request.field_technician
+    - field.field.node.3d_print_request.field_technician_notes
+    - field.field.node.3d_print_request.field_thingiverse_link
+    - node.type.3d_print_request
+  module:
+    - datetime
+    - file
+    - link
+    - text
+id: node.3d_print_request.default
+targetEntityType: node
+bundle: 3d_print_request
+mode: default
+content:
+  field_3d_model_file:
+    weight: 13
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_colour:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_copyright:
+    weight: 15
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_course:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_date_completed:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_submitted:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_due:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_email:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_first_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_gcode_file:
+    weight: 21
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_last_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_notes:
+    weight: 14
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_number_of_copies:
+    weight: 18
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_permission:
+    weight: 17
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_print_status:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_printer:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_printing_time:
+    weight: 20
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_program_faculty_school_dep:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reuse:
+    weight: 16
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_secondary_colour_material:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_status:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_technician:
+    weight: 22
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_technician_notes:
+    weight: 23
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_thingiverse_link:
+    weight: 12
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_person_id: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

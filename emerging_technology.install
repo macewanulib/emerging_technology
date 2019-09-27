@@ -1,0 +1,52 @@
+<?php
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * @file
+ * Install file for emerging_technology.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Populates the taxonomy terms for 3D Print Request statuses.
+ *
+ * @ingroup emerging_technology
+ */
+
+function emerging_technology_install() {
+  $vocabulary = '3d_print_status';
+
+  $terms = array(
+    'Submitted',
+    'In Review',
+    'Denied',
+    'In Queue',
+    'Printing',
+    'Waiting for Pickup',
+    'Print Error',
+    'Picked Up',
+    'Abandoned',
+    'Postponed'
+  );
+
+  foreach($terms as $term) {
+    $t = Term::create(array(
+      'parent' => array(),
+      'name' => $term,
+      'vid' => $vocabulary))->save();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+?>

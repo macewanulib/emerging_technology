@@ -1,0 +1,6 @@
+name: Emerging Technology
+type: module
+package: MacEwan
+description: 'MacEwan Emerging Technology Forms etc'
+core: 8.x
+

@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_in_stock
+    - taxonomy.vocabulary.3d_print_colours
+id: taxonomy_term.3d_print_technician.field_in_stock
+field_name: field_in_stock
+entity_type: taxonomy_term
+bundle: 3d_print_colours
+label: In Stock
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

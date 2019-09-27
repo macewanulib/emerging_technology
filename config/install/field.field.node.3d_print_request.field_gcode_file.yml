@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gcode_file
+    - node.type.3d_print_request
+  module:
+    - file
+id: node.3d_print_request.field_gcode_file
+field_name: field_gcode_file
+entity_type: node
+bundle: 3d_print_request
+label: 'Gcode File(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 3d_print_requests
+  file_extensions: gcode
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.3d_print_technician.field_email
+    - field.field.taxonomy_term.3d_print_technician.field_technician_initials
+    - taxonomy.vocabulary.3d_print_technician
+id: taxonomy_term.3d_print_technician.default
+targetEntityType: taxonomy_term
+bundle: 3d_print_technician
+mode: default
+content:
+  field_technician_initials:
+    weight: 2
+    settings:
+      size: 4
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+hidden:
+  description: true
+  path: true
+  uid: true

@@ -1,0 +1,66 @@
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.3d_print_request.field_3d_model_file
+    - field.field.node.3d_print_request.field_colour
+    - field.field.node.3d_print_request.field_copyright
+    - field.field.node.3d_print_request.field_course
+    - field.field.node.3d_print_request.field_date_completed
+    - field.field.node.3d_print_request.field_date_submitted
+    - field.field.node.3d_print_request.field_due
+    - field.field.node.3d_print_request.field_email
+    - field.field.node.3d_print_request.field_first_name
+    - field.field.node.3d_print_request.field_gcode_file
+    - field.field.node.3d_print_request.field_last_name
+    - field.field.node.3d_print_request.field_notes
+    - field.field.node.3d_print_request.field_number_of_copies
+    - field.field.node.3d_print_request.field_permission
+    - field.field.node.3d_print_request.field_person_id
+    - field.field.node.3d_print_request.field_print_status
+    - field.field.node.3d_print_request.field_printer
+    - field.field.node.3d_print_request.field_program_faculty_school_dep
+    - field.field.node.3d_print_request.field_reuse
+    - field.field.node.3d_print_request.field_secondary_colour_material
+    - field.field.node.3d_print_request.field_technician
+    - field.field.node.3d_print_request.field_technician_notes
+    - field.field.node.3d_print_request.field_thingiverse_link
+    - node.type.3d_print_request
+  module:
+    - user
+id: node.3d_print_request.teaser
+targetEntityType: node
+bundle: 3d_print_request
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_3d_model_file: true
+  field_colour: true
+  field_copyright: true
+  field_course: true
+  field_date_completed: true
+  field_date_submitted: true
+  field_due: true
+  field_email: true
+  field_first_name: true
+  field_gcode_file: true
+  field_last_name: true
+  field_notes: true
+  field_number_of_copies: true
+  field_permission: true
+  field_person_id: true
+  field_print_status: true
+  field_printer: true
+  field_program_faculty_school_dep: true
+  field_reuse: true
+  field_secondary_colour_material: true
+  field_status: true
+  field_technician: true
+  field_technician_notes: true
+  field_thingiverse_link: true

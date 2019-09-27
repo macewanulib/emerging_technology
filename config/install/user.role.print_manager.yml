@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies: {  }
+id: print_manager
+label: 'Print Manager'
+weight: 8
+is_admin: null
+permissions:
+  - 'access in-place editing'
+  - 'access taxonomy overview'
+  - 'create 3d_print_request content'
+  - 'create terms in 3d_print_colours'
+  - 'create terms in 3d_print_technician'
+  - 'delete terms in 3d_print_colours'
+  - 'delete terms in 3d_print_technician'
+  - 'edit any 3d_print_request content'
+  - 'edit terms in 3d_print_colours'
+  - 'edit terms in 3d_print_technician'
+  - 'manage 3d print requests'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'view 3d print requests'
+  - 'view 3d_print_request revisions'
+  - 'view any 3d_print_request content'
+  - 'view own 3d_print_request content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

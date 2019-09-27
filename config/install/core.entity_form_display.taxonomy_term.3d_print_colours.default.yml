@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.3d_print_colours.field_image
+    - field.field.taxonomy_term.3d_print_colours.field_in_stock
+    - taxonomy.vocabulary.3d_print_colours
+id: taxonomy_term.3d_print_colours.default
+targetEntityType: taxonomy_term
+bundle: 3d_print_colours
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: 'Optional: Enter details about the colour or material here to appear on selection in the form.'
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_in_stock:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  field_description: true
+  path: true
+  uid: true

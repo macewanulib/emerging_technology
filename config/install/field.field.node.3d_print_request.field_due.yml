@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_due
+    - node.type.3d_print_request
+  module:
+    - datetime
+id: node.3d_print_request.field_due
+field_name: field_due
+entity_type: node
+bundle: 3d_print_request
+label: Due
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: '+14 days'
+default_value_callback: ''
+settings: {  }
+field_type: datetime

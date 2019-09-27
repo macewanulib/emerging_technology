@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_technician_notes
+    - node.type.3d_print_request
+  module:
+    - text
+id: node.3d_print_request.field_technician_notes
+field_name: field_technician_notes
+entity_type: node
+bundle: 3d_print_request
+label: 'Technician Notes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

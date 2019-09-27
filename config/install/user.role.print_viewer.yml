@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: print_viewer
+label: 'Print Viewer'
+weight: 9
+is_admin: null
+permissions:
+  - 'view 3d print requests'
+  - 'view any 3d_print_request content'
